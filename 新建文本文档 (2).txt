@@ -1,0 +1,8 @@
+dal 6379
+opsdal 6379 kinesis false
+auth start.sh 6379
+eventlooprabbit start.sh 6379
+pushservice 6379
+upgradeservice 6379 ssm false
+passthrough start.sh ssm false
+dispatcher start.sh ssm false
